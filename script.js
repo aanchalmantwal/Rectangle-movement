@@ -7,7 +7,7 @@ window.addEventListener("mousemove", function(details){
         window.innerWidth - (100 + rect.getBoundingClientRect().width/2),
         details,clientX
     );
-    gsap.to("react",{
+    gsap.to("#rect",{
         left: xval,
         ease: Power3,
     });
